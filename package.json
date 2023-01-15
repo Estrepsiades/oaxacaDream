@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "chrome-extension-async": "^3.4.1",
+    "immer": "^9.0.17",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

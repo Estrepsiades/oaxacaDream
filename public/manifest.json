@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "DoNextDev",
     "description": "DoExtensionDeveloperVersionToReact",
-    "version": "0.0.1",
+    "version": "0.1",
     "permissions": [ "storage", "tabs" ],
     "optional_permissions": [
       "<all_urls>"

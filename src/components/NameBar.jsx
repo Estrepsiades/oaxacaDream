@@ -14,7 +14,6 @@ export const NameBar = ({onNewBookmark}) => {
       items: []
     }
     onNewBookmark( bookMark );
-    //console.log( inputValue );
     setinputValue('');
   };
   return (

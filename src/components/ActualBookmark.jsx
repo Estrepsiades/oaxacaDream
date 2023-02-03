@@ -37,11 +37,6 @@ export function ActualBookmark( {bookMarks, addNewItem ,deleteClick, deleteItem}
     return deleteClick( id );
   };
   const onAddItems = ( item ) => {
-    setbody({
-      name: bookMarks[numberOfBookMark].name,
-      id: bookMarks[numberOfBookMark].id,
-      items: ([ item, ...bookMarks[numberOfBookMark].items ])
-    })
     addNewItem( numberOfBookMark, item )
   };
   const onDeleteItem = ( id ) => {

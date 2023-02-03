@@ -1,7 +1,7 @@
 import React from 'react'
-import { testFunction } from '../functions/testFunction';
+import { getCurrentTab } from '../functions/getCurrentTab';
+import { getName } from '../functions/getName';
 export function BookMarkTab({ statusButtons ,nextClick, deleteClick, addItems ,body }) {
-    //console.log( body )
     const nextButton  = () => {
         if( statusButtons() === true ) return nextClick();
         return console.log('No has hecho ningun BookMark')
@@ -10,15 +10,19 @@ export function BookMarkTab({ statusButtons ,nextClick, deleteClick, addItems ,b
         if( statusButtons() === true ) return deleteClick( body.id );
         return console.log('No has hecho ningun BookMark');
     };
-    const addButton = ( id ) => {
+    const addButton = () => {
         if( statusButtons() === true ){
-
-            const item = {
-                name: testFunction(),
-                id: new Date().getMilliseconds(),
-            };
-            //console.log( item );
-            return addItems( item )
+            getCurrentTab().then(
+                url => {
+                    console.log(`Aqui va la url: ${ url }`)
+                    const item = {
+                        url: url,
+                        name: getName( url ),
+                        id: new Date().getMilliseconds(),
+                    }
+                    return addItems( item )
+                }
+            )
         }
         return console.log('No puedes agregar ningun item')
     }

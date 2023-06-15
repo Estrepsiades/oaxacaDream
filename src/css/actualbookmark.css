@@ -1,0 +1,9 @@
+.nameBookmark{
+    text-align: center;
+    font-size: 18px;
+    width: 450px;
+    border-radius: 41px;
+    background: #2196f3;
+    box-shadow:  15px 15px 0px #1663a0,
+             15px -15px 0px #2cc9ff;
+}

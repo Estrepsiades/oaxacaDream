@@ -1,0 +1,21 @@
+.listElements{
+    height: 150px;
+    width: 500px;
+    overflow-y: auto;
+}
+.listElements::-webkit-scrollbar {
+    width: 5px
+}
+.listElements::-webkit-scrollbar-track{
+    background-color: #f5f5f5
+}
+.listElements::-webkit-scrollbar-thumb{
+    background-color: rgba( 33, 150, 243, 1 );
+}
+.listElements::-webkit-scrollbar-thumb:hover{
+    background-color: #1663a0;
+}
+.elementBox{
+    box-sizing: 90px;
+    box-shadow: #1663a0;
+}

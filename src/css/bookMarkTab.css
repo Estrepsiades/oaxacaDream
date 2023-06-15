@@ -1,0 +1,334 @@
+
+.btnBmDelete{
+    width: 180px;
+    padding: 5px 15px;
+    background-color: #000;
+    border: none;
+    font-size: 14px;
+    position: relative;
+    /* overflow: hidden; */
+    transition: 300ms;
+  }
+  .btnBmDelete span{
+    color: gray;
+    position: relative;
+    transition: 300ms;
+    transition-delay: 300ms;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  .btnBmDelete:before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
+    transition: 300ms;
+    transition-delay: 300ms;
+    background-color: red;
+    box-shadow: 0 0 10px red,
+     0 0 30px red, 
+     0 0 50px red;
+  }
+  .btnBmDelete div{
+    transition: 300ms;
+    position: absolute;
+    background-color: red;
+    box-shadow: 0 0 15px red, 0 0 30px red, 0 0 50px red;
+  }
+  .btnBmDelete .top {
+    width: 15px;
+    height: 2px;
+    top: 0;
+    left: 0;
+  }
+  
+  .btnBmDelete .bottom {
+    width: 15px;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .btnBmDelete .left {
+    width: 2px;
+    height: 15px;
+    top: 0;
+    left: 0;
+  }
+  
+  .btnBmDelete .right {
+    width: 2px;
+    height: 15px;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .btnBmDelete:hover {
+    color: #000;
+  }
+  
+  .btnBmDelete:hover span {
+    color: #000;
+  }
+  
+  .btnBmDelete:hover:before {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .btnBmDelete:hover .top, 
+  .btnBmDelete:hover .bottom {
+    width: 100%;
+  }
+  
+  .btnBmDelete:hover .left,
+  .btnBmDelete:hover .right {
+    height: 100%;
+  }
+
+
+
+.btnBmNext{
+    width: 180px;
+    padding: 5px 15px;
+    background-color: #000;
+    border: none;
+    font-size: 14px;
+    position: relative;
+    /* overflow: hidden; */
+    transition: 300ms;
+}
+.btnBmNext span{
+    color: gray;
+    position: relative;
+    transition: 300ms;
+    transition-delay: 300ms;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.btnBmNext:before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
+    transition: 300ms;
+    transition-delay: 300ms;
+    background-color: #2196f3;
+    box-shadow: 0 0 10px #2196f3,
+     0 0 30px #2196f3, 
+     0 0 50px #2196f3;
+}
+.btnBmNext div{
+    transition: 300ms;
+    position: absolute;
+    background-color: #2196f3;
+    box-shadow: 0 0 15px #2196f3, 0 0 30px #2196f3, 0 0 50px #2196f3;
+}
+.btnBmNext .top {
+    width: 15px;
+    height: 2px;
+    top: 0;
+    left: 0;
+}
+  
+.btnBmNext .bottom {
+    width: 15px;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+}
+  
+.btnBmNext .left {
+    width: 2px;
+    height: 15px;
+    top: 0;
+    left: 0;
+}
+  
+.btnBmNext .right {
+    width: 2px;
+    height: 15px;
+    bottom: 0;
+    right: 0;
+}
+  
+.btnBmNext:hover {
+    color: #000;
+}
+  
+.btnBmNext:hover span {
+    color: #000;
+}
+  
+.btnBmNext:hover:before {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+  
+.btnBmNext:hover .top, 
+.btnBmNext:hover .bottom {
+    width: 100%;
+}
+  
+.btnBmNext:hover .left,
+.btnBmNext:hover .right {
+    height: 100%;
+}
+
+
+
+
+  .btnBmAddUrl{
+    width: 180px;
+    padding: 5px 15px;
+    background-color: #000;
+    border: none;
+    font-size: 14px;
+    position: relative;
+    /* overflow: hidden; */
+    transition: 300ms;
+  }
+  .btnBmAddUrl span{
+    color: gray;
+    position: relative;
+    transition: 300ms;
+    transition-delay: 300ms;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  .btnBmAddUrl:before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
+    transition: 300ms;
+    transition-delay: 300ms;
+    background-color: green;
+    box-shadow: 0 0 10px green,
+     0 0 30px green, 
+     0 0 50px green;
+  }
+  .btnBmAddUrl div{
+    transition: 300ms;
+    position: absolute;
+    background-color: green;
+    box-shadow: 0 0 15px green, 0 0 30px green, 0 0 50px green;
+  }
+  .btnBmAddUrl .top {
+    width: 15px;
+    height: 2px;
+    top: 0;
+    left: 0;
+  }
+  
+  .btnBmAddUrl .bottom {
+    width: 15px;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .btnBmAddUrl .left {
+    width: 2px;
+    height: 15px;
+    top: 0;
+    left: 0;
+  }
+  
+  .btnBmAddUrl .right {
+    width: 2px;
+    height: 15px;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .btnBmAddUrl:hover {
+    color: #000;
+  }
+  
+  .btnBmAddUrl:hover span {
+    color: #000;
+  }
+  
+  .btnBmAddUrl:hover:before {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .btnBmAddUrl:hover .top, 
+  .btnBmAddUrl:hover .bottom {
+    width: 100%;
+  }
+  
+  .btnBmAddUrl:hover .left,
+  .btnBmAddUrl:hover .right {
+    height: 100%;
+  }
+
+.elements{
+  display: grid;
+  grid-template-columns: 110px 110px 110px 110px  
+}
+
+.nextBookMark{
+  background: rgba( 33, 150, 243, 0.65 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.addUrl{
+  background: rgba( 0, 128, 0, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.deleteBookMark{
+  background: rgba( 255, 0, 0, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.config{
+  background: rgba( 33, 150, 243, 0.65 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

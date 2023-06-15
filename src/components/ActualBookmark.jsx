@@ -1,12 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import { Items } from './Items'
 import { BookMarkTab } from "./BookMarkTab";
-export function ActualBookmark( {bookMarks, addNewItem ,deleteClick, deleteItem} ) {
+import '../css/actualbookmark.css'
+export function ActualBookmark( {bookMarks, addNewItem ,deleteClick, deleteItem, updateErrors} ) {
   const [numberOfBookMark, setnumberOfBookMark] = useState(0);
   const [body, setbody] = useState({
     name: 'Porque no intentas agregar un BookMark?',
     id: null,
     items: [
+      
+      {
+        name: 'test',
+        id: null,
+        url: null
+      }
+      
     ],
   })
   useEffect( () => {
@@ -31,7 +39,7 @@ export function ActualBookmark( {bookMarks, addNewItem ,deleteClick, deleteItem}
   };
   const onDeleteClick = ( id ) => {
     if( bookMarks.length <= 1 ){
-      return console.log('No se puede borrar este bookMark')
+      return updateErrors('No se puede borrar este bookMark')
     }
     setnumberOfBookMark( numberOfBookMark - numberOfBookMark );
     return deleteClick( id );
@@ -40,12 +48,11 @@ export function ActualBookmark( {bookMarks, addNewItem ,deleteClick, deleteItem}
     addNewItem( numberOfBookMark, item )
   };
   const onDeleteItem = ( id ) => {
-    console.log( `Se ejecuta en ActualBookMark.jsx con id${ id }`)
     deleteItem( numberOfBookMark, id )
   }
   return (
     <>
-    <h3> { body.name } </h3>
+    <h3 className='nameBookmark'> { body.name } </h3>
     <Items 
       elements = { body.items } 
       DeleteButton = { onDeleteItem }
@@ -56,6 +63,7 @@ export function ActualBookmark( {bookMarks, addNewItem ,deleteClick, deleteItem}
       deleteClick = { onDeleteClick }
       addItems = { onAddItems }
       body = { body }
+      updateErrors = { updateErrors }
       />
     </>
   )

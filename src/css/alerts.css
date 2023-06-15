@@ -1,0 +1,29 @@
+.alert{
+    width: 100%;
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    display: none;
+    animation: fade-in 0.5s ease-out forwards;
+}
+.alert.show{
+    display: block;
+    animation: fade-out 0.5s ease-out forwards 2s;
+}
+@keyframes fade-in{
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+
+}
+@keyframes fade-out{
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
